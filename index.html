@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Canvas Pixel Data</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Pixel Data - Zygal</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -14,16 +17,16 @@
                 <input type="text" id="charInput" placeholder="Enter a character" maxlength="1">
             </div>
             <div class="preview">
-                <canvas id="myCanvas" width="16" height="34">
+                <canvas class="myCanvas" id="myCanvas" width="16px" height="34px">
                     <!-- Canvas Preview Here -->
                 </canvas>
             </div>
             <div class="downloadButton">
                 <!-- Download Button -->
-                <a id="downloadLink" download="pixel_data.txt">Download Pixel Data</a>
+                <a class="downloadLink" id="downloadLink" download="pixel_data.txt">Download Pixel Data</a>
             </div>
         </div>
-        <div id="pixelDisplay">
+        <div class="pixelDisplay" id="pixelDisplay">
             <!-- ? Display result here -->
         </div>
     </main>

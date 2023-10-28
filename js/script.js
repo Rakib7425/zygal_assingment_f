@@ -63,7 +63,9 @@ document.addEventListener("DOMContentLoaded", () => {
 	// Event listener for input changes in the "charInput" field
 	document.getElementById("charInput").addEventListener("input", () => {
 		const char = document.getElementById("charInput").value;
-		drawCharacter(char, ctx, canvas); // Redraw the canvas with the new character
+
+		// Redraw the canvas with the new character
+		drawCharacter(char, ctx, canvas);
 	});
 
 	// Event listener for the download link
@@ -79,3 +81,5 @@ document.addEventListener("DOMContentLoaded", () => {
 		downloadLink.setAttribute("href", data);
 	});
 });
+
+// Thanks ❤
