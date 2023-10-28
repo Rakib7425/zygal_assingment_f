@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Canvas Pixel Data</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="content">
+            <div class="userInput">
+                <!-- User input here -->
+                <input type="text" id="charInput" placeholder="Enter a character" maxlength="1">
+            </div>
+            <div class="preview">
+                <canvas id="myCanvas" width="16" height="34">
+                    <!-- Canvas Preview Here -->
+                </canvas>
+            </div>
+            <div class="downloadButton">
+                <!-- Download Button -->
+                <a id="downloadLink" download="pixel_data.txt">Download Pixel Data</a>
+            </div>
+        </div>
+        <div id="pixelDisplay">
+            <!-- ? Display result here -->
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

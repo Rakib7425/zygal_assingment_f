@@ -1,0 +1,84 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f3f3f3;
+}
+
+.main {
+	max-width: 1280px;
+	min-width: 1280px;
+	margin: 20px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	height: 80vh;
+	overflow-y: auto;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.userInput {
+	margin-bottom: 20px;
+}
+
+.userInput input {
+	padding: 10px;
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	outline: none;
+}
+
+.preview {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+#myCanvas {
+	background-color: black;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.downloadButton {
+	text-align: center;
+	cursor: pointer;
+}
+
+#downloadLink {
+	display: inline-block;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #fff;
+	background-color: #3498db;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+}
+
+#downloadLink:hover {
+	background-color: #2980b9;
+}
+
+#pixelDisplay {
+	margin: 20px;
+	padding: 20px;
+	background-color: white;
+	border: 1px solid whitesmoke;
+	border-radius: 5px;
+	white-space: pre-wrap;
+}
