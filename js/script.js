@@ -24,6 +24,17 @@ const drawCharacter = (char, ctx, canvas) => {
 	updatePixelDataDisplay(ctx);
 };
 
+// Function to convert a single component of a color to its hexadecimal representation
+const componentToHex = (c) => {
+	const hex = c.toString(16);
+	return hex.length === 1 ? "0" + hex : hex;
+};
+
+// Function to convert RGB color values to a hexadecimal representation
+const rgbToHex = (r, g, b) => {
+	return componentToHex(r) + componentToHex(g) + componentToHex(b);
+};
+
 // Function to convert pixel data to hexadecimal format
 const convertToHex = (pixelData) => {
 	let hexData = "";
@@ -45,18 +56,9 @@ const updatePixelDataDisplay = (ctx) => {
 	document.getElementById("pixelDisplay").innerText = hexData;
 };
 
-// Function to convert a single component of a color to its hexadecimal representation
-const componentToHex = (c) => {
-	const hex = c.toString(16);
-	return hex.length === 1 ? "0" + hex : hex;
-};
-
-// Function to convert RGB color values to a hexadecimal representation
-const rgbToHex = (r, g, b) => {
-	return componentToHex(r) + componentToHex(g) + componentToHex(b);
-};
-
 document.addEventListener("DOMContentLoaded", () => {
+	/* These lines of code are retrieving the canvas element with the id "myCanvas" from the HTML document
+	and obtaining its 2D rendering context. */
 	const canvas = document.getElementById("myCanvas");
 	const ctx = canvas.getContext("2d");
 

@@ -55,7 +55,7 @@ body {
 
 .myCanvas {
 	background-color: black;
-	border: 1px solid #747070;
+	border: 1px solid rgb(67, 67, 67);
 	border-radius: 5px;
 }
 
