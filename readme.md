@@ -17,7 +17,7 @@ The project structure is as follows:
 
 -   `css/style.css`: The CSS file for styling the web page.
 
--   `js/script.js`: The JavaScript file containing the logic for the calendar functionality.
+-   `js/script.js`: The JavaScript file containing the logic for the app functionality.
 
 ## Technologies Used
 
